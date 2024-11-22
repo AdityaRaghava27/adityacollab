@@ -1,0 +1,8 @@
+name: demoadityacollab
+on: [push]
+jobs:
+  demo-github-actions
+    runs-on: self-hosted
+    steps:
+      - run: mkdir "test"
+
