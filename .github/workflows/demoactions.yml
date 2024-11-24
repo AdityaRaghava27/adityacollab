@@ -4,5 +4,5 @@ jobs:
  demo-github-actions:
    runs-on: X64 
    steps:
-     - run: mkdir "test"
      - run: mkdir "test1"
+     - run: mkdir "test2"
