@@ -2,6 +2,6 @@ name: demoadityacollab
 on: [push]
 jobs: 
   demo-github-actions
-    runs-on: self-hosted 
+    runs-on: X64 
     steps:
       - run: mkdir "test"
