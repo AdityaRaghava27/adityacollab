@@ -4,5 +4,6 @@ jobs:
  demo-github-actions:
    runs-on: X64 
    steps:
-     - run: mkdir "test1"
-     - run: mkdir "test2"
+     - uses: actions/checkout@v4
+       with:
+         ref: development
