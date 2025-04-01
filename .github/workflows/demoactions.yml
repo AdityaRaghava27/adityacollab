@@ -1,9 +1,0 @@
-name: demoadityacollab
-on: [push]
-jobs: 
- demo-github-actions:
-   runs-on: X64 
-   steps:
-     - uses: actions/checkout@v4
-       with:
-         ref: development
