@@ -1,0 +1,37 @@
+{
+  "clusterName": "docker-desktop",
+  "scanDate": "2025-04-01T15:00:00+05:30",
+  "findings": [
+    {
+      "id": "CIS-1.1.1",
+      "description": "Ensure that the API server pod is not running with privileged access",
+      "severity": "Critical",
+      "remediation": "Reconfigure the API server pod to remove privileged access."
+    },
+    {
+      "id": "CIS-4.2.2",
+      "description": "Ensure containers use a non-root user",
+      "severity": "High",
+      "remediation": "Modify container specifications to use non-root users."
+    },
+    {
+      "id": "CIS-5.3.1",
+      "description": "Ensure K8s Secrets are encrypted at rest",
+      "severity": "Medium",
+      "remediation": "Configure encryption for Kubernetes Secrets using a provider."
+    },
+    {
+      "id": "CIS-3.1.1",
+      "description": "Ensure Kubelet configuration file permissions are set to 644 or more restrictive",
+      "severity": "Low",
+      "remediation": "Adjust file permissions for the Kubelet configuration file."
+    }
+  ],
+  "summary": {
+    "totalFindings": 4,
+    "criticalFindings": 1,
+    "highFindings": 1,
+    "mediumFindings": 1,
+    "lowFindings": 1
+  }
+}
